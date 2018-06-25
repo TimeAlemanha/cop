@@ -10,6 +10,7 @@ type
   {Classe Generica T (Type)}
   TKeyValue<T> = class
   private
+  
     FKey: String;
     FValue: T;
     procedure SetKey(const Value: String);
