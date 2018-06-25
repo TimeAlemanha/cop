@@ -99,7 +99,7 @@ begin
     Pessoa.FTipo.Nome := 'Vinicius';
     Pessoa.SetEndereco('Rua tal e tal');
 
-    ShowMessage(Pessoa.FTipo.Nome + ' mora '+ Pessoa.Endereco);
+    ShowMessage(Pessoa.FTipo.Nome + ' mora ' + Pessoa.Endereco);
   finally
     FreeAndNIl(Pessoa);
   end;
