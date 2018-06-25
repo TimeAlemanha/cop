@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  {Classe Generica T (Type)}
+  {Classe Generica  T (Type)}
   TKeyValue<T> = class
   private
     FKey: String;
