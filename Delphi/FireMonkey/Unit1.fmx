@@ -1,0 +1,350 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 503
+  ClientWidth = 640
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 617.000000000000000000
+    Size.Height = 177.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    RowCount = 9
+    Viewport.Width = 612.000000000000000000
+    Viewport.Height = 145.000000000000000000
+  end
+  object edtId: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 10
+    Text = '1'
+    Position.X = 8.000000000000000000
+    Position.Y = 32.000000000000000000
+  end
+  object lblId: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 15.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label'
+    TabOrder = 11
+  end
+  object edtFirstName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Text = 'Nancy'
+    Position.X = 8.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblFirstName: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 63.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label'
+    TabOrder = 9
+  end
+  object EdtLastName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Text = 'Davolio'
+    Position.X = 8.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lblLastName: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 111.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label'
+    TabOrder = 7
+  end
+  object DateEdit1: TDateEdit
+    Date = 17875.000000000000000000
+    WeekNumbers = True
+    DateFormatKind = Long
+    HitTest = False
+    Position.X = 8.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+  end
+  object Label1: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 159.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label'
+    TabOrder = 6
+  end
+  object Label2: TLabel
+    Position.X = 22.000000000000000000
+    Position.Y = 478.000000000000000000
+    Text = 'Quantidade Registros : '
+    TabOrder = 18
+  end
+  object qtdeRegistros: TLabel
+    Position.X = 144.000000000000000000
+    Position.Y = 478.000000000000000000
+    Text = 'qtdeRegistros'
+    TabOrder = 19
+  end
+  object ListBox1: TListBox
+    Position.X = 314.000000000000000000
+    Position.Y = 4.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 285.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    DisableFocusEffect = True
+    ItemIndex = 0
+    Items.Strings = (
+      'Nancy'
+      'Sales Representative'
+      'Andrew'
+      'Vice President, Sales'
+      'Janet'
+      'Sales Representative'
+      'Margaret'
+      'Sales Representative'
+      'Steven'
+      'Sales Manager'
+      'Michael'
+      'Sales Representative'
+      'Robert'
+      'Sales Representative'
+      'Laura'
+      'Inside Sales Coordinator'
+      'Anne'
+      'Sales Representative')
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 300.000000000000000000
+    Viewport.Height = 237.000000000000000000
+    object SearchBox1: TSearchBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      Size.Width = 305.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end>
+    Left = 128
+    Top = 12
+  end
+  object ShadowEffect1: TShadowEffect
+    Distance = 3.000000000000000000
+    Direction = 45.000000000000000000
+    Softness = 0.300000011920929000
+    Opacity = 0.600000023841857900
+    ShadowColor = claBlack
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end
+      item
+        Scale = 2.000000000000000000
+      end>
+    Position.X = 180.000000000000000000
+    Position.Y = 222.000000000000000000
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=SQLite_Demo')
+    Connected = True
+    LoginPrompt = False
+    Left = 256
+    Top = 20
+  end
+  object FDTable1: TFDTable
+    Active = True
+    IndexFieldNames = 'EmployeeID'
+    Connection = FDConnection1
+    UpdateOptions.UpdateTableName = 'Employees'
+    TableName = 'Employees'
+    Left = 224
+    Top = 80
+    object FDTable1EmployeeID: TFDAutoIncField
+      FieldName = 'EmployeeID'
+      Origin = 'EmployeeID'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object FDTable1LastName: TStringField
+      FieldName = 'LastName'
+      Origin = 'LastName'
+      Required = True
+    end
+    object FDTable1FirstName: TStringField
+      FieldName = 'FirstName'
+      Origin = 'FirstName'
+      Required = True
+      Size = 10
+    end
+    object FDTable1Title: TStringField
+      FieldName = 'Title'
+      Origin = 'Title'
+      Size = 30
+    end
+    object FDTable1TitleOfCourtesy: TStringField
+      FieldName = 'TitleOfCourtesy'
+      Origin = 'TitleOfCourtesy'
+      Size = 25
+    end
+    object FDTable1BirthDate: TDateTimeField
+      FieldName = 'BirthDate'
+      Origin = 'BirthDate'
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDTable1
+    ScopeMappings = <>
+    Left = 230
+    Top = 128
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 180
+    Top = 21
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'EmployeeID'
+        end
+        item
+          MemberName = 'LastName'
+          Width = 80
+        end
+        item
+          MemberName = 'FirstName'
+        end
+        item
+          MemberName = 'Title'
+          Width = 200
+        end
+        item
+          MemberName = 'TitleOfCourtesy'
+          Width = 100
+        end
+        item
+          MemberName = 'BirthDate'
+          Width = 80
+        end>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'EmployeeID'
+      Control = edtId
+      Direction = linkDataToControl
+      Track = False
+    end
+    object BindExpression1: TBindExpression
+      Category = 'Binding Expressions'
+      ControlComponent = lblId
+      SourceComponent = FDTable1EmployeeID
+      SourceExpression = 'DisplayLabel'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'FirstName'
+      Control = edtFirstName
+      Track = False
+    end
+    object BindExpression2: TBindExpression
+      Category = 'Binding Expressions'
+      ControlComponent = lblFirstName
+      SourceComponent = FDTable1FirstName
+      SourceExpression = 'FieldName'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'LastName'
+      Control = EdtLastName
+      Track = False
+    end
+    object BindExpression3: TBindExpression
+      Category = 'Binding Expressions'
+      ControlComponent = lblLastName
+      SourceComponent = FDTable1LastName
+      SourceExpression = 'FieldName'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'BirthDate'
+      Control = DateEdit1
+      Track = True
+    end
+    object BindExpression4: TBindExpression
+      Category = 'Binding Expressions'
+      ControlComponent = Label1
+      SourceComponent = FDTable1BirthDate
+      SourceExpression = 'FieldName'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+    end
+    object BindExpression5: TBindExpression
+      Category = 'Binding Expressions'
+      ControlComponent = qtdeRegistros
+      SourceComponent = FDTable1
+      SourceExpression = 'RecordCount'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+    end
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Title'
+      Control = ListBox1
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'FirstName'
+      FillBreakGroups = <>
+    end
+  end
+end
